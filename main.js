@@ -42,7 +42,32 @@ cars.forEach((car) => {
     }
 })
 
+/*
+ 
+LOG: ciclo for e forEach
+
 console.log(gasCars);
 console.log(dieselCars);
 console.log(otherCars);
+ */
+
+// Variabili con filter
+const filterGas = cars.filter((car) => {
+    
+    if(car.fuel === "benzina") {
+        return true
+    }
+})
+
+const filterDiesel = cars.filter((car) => {
+
+    if(car.fuel === "diesel") {
+        return true
+    }
+})
+
+console.log(filterGas);
+console.log(filterDiesel);
+
+
 

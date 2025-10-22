@@ -43,7 +43,7 @@ cars.forEach((car) => {
 })
 
 /*
- 
+
 LOG: ciclo for e forEach
 
 console.log(gasCars);
@@ -66,8 +66,17 @@ const filterDiesel = cars.filter((car) => {
     }
 })
 
+const filterOther = cars.filter((car) => {
+
+    if(car.fuel !== "benzina" && car.fuel !== "diesel") {
+        return true
+    }
+})
+
 console.log(filterGas);
 console.log(filterDiesel);
+console.log(filterOther);
+
 
 
 

@@ -11,3 +11,38 @@ const cars = [
   { brand: 'Peugeot', model: '208', fuel: 'metano' }
 ];
 
+const gasCars = [];
+const dieselCars = [];
+const otherCars = [];
+
+/*
+
+for (let i = 0; i < cars.length; i++) {
+    const car = cars[i];
+
+    if(car.fuel === "benzina") {
+        gasCars.push(car);
+    } else if(car.fuel === "diesel") {
+        dieselCars.push(car);
+    } else {
+        otherCars.push(car);
+    }
+}
+
+*/
+
+cars.forEach((car) => {
+
+    if(car.fuel === "benzina") {
+        gasCars.push(car);
+    } else if(car.fuel === "diesel") {
+        dieselCars.push(car);
+    } else {
+        otherCars.push(car);
+    }
+})
+
+console.log(gasCars);
+console.log(dieselCars);
+console.log(otherCars);
+
